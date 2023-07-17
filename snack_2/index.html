@@ -8,7 +8,26 @@
 </head>
 
 <body>
+    <form action="form.php">
+        <div style="margin-bottom: 30px;">
 
+            <label for="name">Inserisci quì il tuo nome:</label>
+            <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome">
+        </div>
+        <div style="margin-bottom: 30px;">
+
+            <label for="email">Inserisci quì la tua mail</label>
+            <!-- A fini didattici ho lasciato l'input come text invece di email per effettuare la validazione con php  -->
+            <input type="text" id="email" name="email" placeholder="Inserisci la tua mail">
+        </div>
+        <div style="margin-bottom: 30px;">
+
+            <label for="age">Inserisci quì la tua età:</label>
+            <input type="number" id="age" name="age" placeholder="Inserisci la tua età">
+        </div>
+
+        <button>Invia Form</button>
+    </form>
 </body>
 
 </html>
