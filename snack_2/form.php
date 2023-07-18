@@ -17,7 +17,7 @@ $result = 'Accesso negato';
 
 <body>
     <!-- Il nome deve avere più di 3 lettere  -->
-    <?php if (strlen($name) > 3) : ?>
+    <?php if (strlen(trim($name)) > 3) : ?>
         <!-- La mail deve contenere la chiocciola e il punto -->
         <?php if (str_contains($email, '@') && str_contains($email, '.')) : ?>
             <!-- L'età dev'essere un numero. Se risulta tutto valido, solo a questo punto l'accesso è consentito  -->
